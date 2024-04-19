@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Docker-Node'
+        label 'Jumpserver'
     }
 
     environment {
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/persevcareers/Project-Final-Backend.git'
+                git branch: 'main', url: 'https://github.com/BMK53/Project-Final-Backend.git'
             }
         }
 
